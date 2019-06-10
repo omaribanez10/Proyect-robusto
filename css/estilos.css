@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap&subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+}
+
+body {
+    background: linear-gradient(90deg, #651fff, #ff1744);
+    padding: 20px;
+}
+
+.container-all {
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+    margin-top: 100px;
+    display: flex;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.container-form {
+    width: 80%;
+    padding: 40px;
+    background: white;
+}
+
+.logo {
+    width: 250px;
+    display: block;
+    margin: auto;
+}
+
+.title {
+    text-align: center;
+    margin-top: 20px;
+    color: #651fff;
+    margin-bottom: 30px;
+}
+
+.title:hover {
+    text-align: center;
+    margin-top: 20px;
+    color: #ff1744;
+    margin-bottom: 30px;
+}
+
+label {
+    display: block;
+    margin-top: 30px;
+    font-size: 19px;
+    font-weight: 300px;
+    color: #651fff;
+}
+
+input[type="email"], input[type="password"], input[type="username"] {
+    width: 100%;
+    height: 30px;
+    background: rgba(0, 0, 0, 0);
+    border: 0px;
+    outline: 0px;
+    border-bottom: 1px solid rgba(101, 31, 255, 0.3);
+    color: #ff1744;
+    font-size: 15px;
+}
+
+input[type="email"]:hover {
+    border-bottom: 2px solid rgba(101, 31, 255, 0.8);
+}
+
+input[type="password"]:hover {
+    border-bottom: 2px solid rgba(101, 31, 255, 0.8);
+}
+
+input[type="username"]:hover {
+    border-bottom: 2px solid rgba(101, 31, 255, 0.8);
+}
+
+input[type="submit"] {
+    width: 100%;
+    height: 50px;
+    margin-top: 60px;
+    color: white;
+    border: 0px;
+    background: linear-gradient(90deg, #ff1744, #651fff);
+    font-weight: 300;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background: linear-gradient(90deg, #651fff, #ff1744);
+}
+
+.text-footer {
+    display: block;
+    margin-top: 100px;
+    text-align: center;
+    color: #651fff;
+    font-weight: 300;
+}
+
+.text-footer a {
+    color: #ff1744;
+    font-weight: 500;
+}
+
+/*   PARTE DERECHA DE LA INTERFAZ */
+
+.container-texto {
+    width: 100%;
+    background-image: url(../images/fondo_derecha.jpg);
+    background-position: center;
+    background-size: cover;
+    padding: 40px;
+    position: relative;
+}
+
+.capa {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(90deg, #ff1744, #651fff);
+    opacity: 0.6;
+}
+
+.title-description {
+    position: relative;
+    top: 80px;
+    color: white;
+    font-size: 300;
+    font-weight: 40px;
+}
+
+.text-description {
+    position: relative;
+    top: 110px;
+    color: white;
+    font-size: 20;
+    font-weight: 200;
+}
+
+/* TEXTO DE ERROR*/
+
+.msg-error {
+    color: #ff1744;
+    display: block;
+    margin-top: 10px;
+    font-size: 13px;
+}
+
+/*INTERFAZ DE BIENVENIDA*/
+
+.contenedor-welcome {
+    width: 100%;
+    max-width: 800px;
+    text-align: center;
+    padding: 40px;
+    margin: auto;
+    margin-top: 100px;
+    background: white;
+    border-radius: 20px;
+}
+
+.logo-welcome {
+    width: 50px;
+    margin: 20px;
+}
+
+.title-welcome {
+    font-weight: 400;
+    font-size: 40px;
+    margin-top: 20px;
+    color: #651fff;
+}
+
+.title-welcome:hover {
+    font-weight: 400;
+    font-size: 40px;
+    margin-top: 20px;
+    color: #ff1744;
+}
+
+.close-sesion {
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+    display: block;
+    padding: 20px;
+    margin-top: 40px;
+    color: white;
+    font-size: 20px;
+    font-weight: 20px;
+    background: linear-gradient(90deg, #ff1744, #651fff);
+}
+
+.close-sesion:hover {
+    background: linear-gradient(90deg, #651fff, #ff1744);
+}
+
+/* RESPONSIVE*/
+
+@media screen and (max-width:800px) {
+    .container-texto {
+        display: none;
+    }
+    .container-form {
+        margin: auto;
+        width: 100;
+        background: white;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .title-welcome {
+        font-weight: 400;
+        font-size: 30px;
+        margin-top: 20px;
+        color: #651fff;
+    }
+    .title-welcome:hover {
+        font-weight: 400;
+        font-size: 30px;
+        margin-top: 20px;
+        color: #ff1744;
+    }
+}
